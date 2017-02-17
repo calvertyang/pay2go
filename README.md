@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/CalvertYang/pay2go.svg?branch=master)](https://travis-ci.org/CalvertYang/pay2go)
 
+> 智付寶第三方金流業務已轉移到智付通，請改用 [spgateway](https://github.com/calvertyang/spgateway)
+
 # 智付寶 Pay2go
 
 這是智付寶 API 的 Ruby 包裝，更多資訊請參閱 [API 文件專區](https://www.pay2go.com/info/site_description/api_description)。
@@ -55,7 +57,7 @@ MPG API              | MPG(Multi Payment Gateway)，單一串接多種支付方�
 
 實體方法                                                   | 回傳       | 說明
 ---                                                       | ---       | ---
-`verify_check_code(params)`                               | `Boolean` | 會於檢查收到的參數，其檢查碼是否正確，用於智付寶的 `NotifyURL` 參數及檢核資料回傳的合法性。
+`verify_check_code(params)`                               | `Boolean` | 用於檢查收到的參數，其檢查碼是否正確，用於智付寶的 `NotifyURL` 參數及檢核資料回傳的合法性。
 `generate_mpg_params(params)`                             | `Hash`    | 用於產生 MPG API 表單需要的參數。
 `query_trade_info(params)`                                | `Hash`    | 用於查詢交易狀態。
 `credit_card_deauthorize(params)`                         | `Hash`    | 用於進行信用卡交易授權取消作業。
