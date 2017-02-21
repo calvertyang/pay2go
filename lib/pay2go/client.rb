@@ -7,16 +7,16 @@ require 'pay2go/core_ext/hash'
 module Pay2go
   class Client
     TRANSACTION_API_ENDPOINTS = {
-      test: 'https://capi.pay2go.com/API/QueryTradeInfo',
-      production: 'https://api.pay2go.com/API/QueryTradeInfo'
+      test: 'https://ccore.spgateway.com/API/QueryTradeInfo',
+      production: 'https://core.spgateway.com/API/QueryTradeInfo'
     }.freeze
     CREDITCARD_COLLECT_REFUND_API_ENDPOINTS = {
-      test: 'https://cweb.pay2go.com/API/CreditCard/Close',
-      production: 'https://web.pay2go.com/API/CreditCard/Close'
+      test: 'https://ccore.spgateway.com/API/CreditCard/Close',
+      production: 'https://core.spgateway.com/API/CreditCard/Close'
     }.freeze
     CREDITCARD_DEAUTHORIZE_API_ENDPOINTS = {
-      test: 'https://cweb.pay2go.com/API/CreditCard/Cancel',
-      production: 'https://web.pay2go.com/API/CreditCard/Cancel'
+      test: 'https://ccore.spgateway.com/API/CreditCard/Cancel',
+      production: 'https://core.spgateway.com/API/CreditCard/Cancel'
     }.freeze
     NEED_CHECK_VALUE_APIS = [
       :query_trade_info # Transaction API
